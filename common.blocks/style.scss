@@ -1,0 +1,13 @@
+@import 'account-create/_account-create';
+@import 'account-profile/_account-profile';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}

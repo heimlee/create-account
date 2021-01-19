@@ -1,0 +1,39 @@
+.account-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.account-profile-inner {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  border-radius: 7px;
+  margin-top: 50px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+.account-profile__title {
+  text-align: center;
+}
+
+.account-profile__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-profile__username,
+.account-profile__email,
+.account-profile__pref-lodging {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  
+  .title {
+    font-weight: bold;
+  }
+}
+
+.data-user-profile {
+  line-height: 22px;
+  margin-left: 20px;
+}

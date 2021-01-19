@@ -1,0 +1,170 @@
+.account-create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.account-create-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.account-create__title {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input {
+  outline: none;
+}
+
+.account-create__input-fields label {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-right: 5px;
+  text-align: right;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 170px;
+}
+
+.account-create__input-fields input {
+  border: 1px solid #666;
+  padding: 2px;
+  width: 200px;
+}
+
+.account-create__input-fields .error {
+  display: inline-block;
+  margin: 15px 0 0 5px;
+  position: fixed;
+}
+
+.account-create__check-pref-lodging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-create__check-pref-lodging .check-pref-lodging__title {
+  display: inline-block;
+  font-weight: bold;
+  margin: 15px 0 0 17px;
+  padding-right: 5px;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.account-create__check-pref-lodging label {
+  display: inline-block;
+  margin: 10px 0 0 5px;
+  text-align: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 270px;
+}
+
+.account-create__check-pref-lodging input {
+  margin-left: 80px;
+}
+
+.account-create__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.account-create__submit input {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.account-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.account-profile-inner {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  border-radius: 7px;
+  margin-top: 50px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+.account-profile__title {
+  text-align: center;
+}
+
+.account-profile__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account-profile__username,
+.account-profile__email,
+.account-profile__pref-lodging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.account-profile__username .title,
+.account-profile__email .title,
+.account-profile__pref-lodging .title {
+  font-weight: bold;
+}
+
+.data-user-profile {
+  line-height: 22px;
+  margin-left: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
