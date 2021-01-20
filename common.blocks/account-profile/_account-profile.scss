@@ -8,12 +8,13 @@
   border: 1px solid #000;
   border-radius: 7px;
   margin-top: 50px;
-  min-width: 320px;
+  min-width: auto;
   padding: 20px;
 }
 
 .account-profile__title {
   text-align: center;
+  font-size: 28px;
 }
 
 .account-profile__content {
@@ -36,4 +37,10 @@
 .data-user-profile {
   line-height: 22px;
   margin-left: 20px;
+}
+
+@media (min-width: 440px) {
+  .account-profile-inner {
+    min-width: 320px;
+  }
 }

@@ -26,15 +26,6 @@ password.addEventListener('blur', passwordVerify);
 passwordConfirm.addEventListener('blur', passwordConfirmVerify);
 email.addEventListener('blur', emailVerify);
 
-fireCabins.addEventListener('change', checkFireCabins);
-horseshoeCabins.addEventListener('change', checkHorseshoeCabins);
-spruceCabins.addEventListener('change', checkSpruceCabins);
-ursaMajorCabins.addEventListener('change', checkUrsaMajorCabins);
-bearMeadowCampground.addEventListener('change', checkBearMeadowCampground);
-lakesideCampground.addEventListener('change', checkLakesideCampground);
-leadfootCampground.addEventListener('change', checkLeadfootCampground);
-talusCampground.addEventListener('change', checkTalusCampground);
-
 // Function validate and save data of user
 
 function accountCreate() {
@@ -128,66 +119,70 @@ function emailVerify() {
   }
 }
 
-function checkFireCabins() {
-  if (fireCabins.checked == true) {
-    prefLodging.push(fireCabins.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(fireCabins.value), 1);
+let checkboxes = {
+  checkFireCabins() {
+    if (fireCabins.checked == true) {
+      prefLodging.push(fireCabins.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(fireCabins.value), 1);
+    }
+  },
+  checkHorseshoeCabins() {
+    if (horseshoeCabins.checked == true) {
+      prefLodging.push(horseshoeCabins.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(horseshoeCabins.value), 1);
+    }
+  },
+  checkSpruceCabins() {
+    if (spruceCabins.checked == true) {
+      prefLodging.push(spruceCabins.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(spruceCabins.value), 1);
+    }
+  },
+  checkUrsaMajorCabins() {
+    if (ursaMajorCabins.checked == true) {
+      prefLodging.push(ursaMajorCabins.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(ursaMajorCabins.value), 1);
+    }
+  },
+  checkBearMeadowCampground() {
+    if (bearMeadowCampground.checked == true) {
+      prefLodging.push(bearMeadowCampground.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(bearMeadowCampground.value), 1);
+    }
+  },
+  checkLakesideCampground() {
+    if (lakesideCampground.checked == true) {
+      prefLodging.push(lakesideCampground.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(lakesideCampground.value), 1);
+    }
+  },
+  checkLeadfootCampground() {
+    if (leadfootCampground.checked == true) {
+      prefLodging.push(leadfootCampground.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(leadfootCampground.value), 1);
+    }
+  },
+  checkTalusCampground() {
+    if (talusCampground.checked == true) {
+      prefLodging.push(talusCampground.value);
+    } else {
+      prefLodging.splice(prefLodging.indexOf(talusCampground.value), 1);
+    }
   }
-}
+};
 
-function checkHorseshoeCabins() {
-  if (horseshoeCabins.checked == true) {
-    prefLodging.push(horseshoeCabins.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(horseshoeCabins.value), 1);
-  }
-}
-
-function checkSpruceCabins() {
-  if (spruceCabins.checked == true) {
-    prefLodging.push(spruceCabins.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(spruceCabins.value), 1);
-  }
-}
-
-function checkUrsaMajorCabins() {
-  if (ursaMajorCabins.checked == true) {
-    prefLodging.push(ursaMajorCabins.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(ursaMajorCabins.value), 1);
-  }
-}
-
-function checkBearMeadowCampground() {
-  if (bearMeadowCampground.checked == true) {
-    prefLodging.push(bearMeadowCampground.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(bearMeadowCampground.value), 1);
-  }
-}
-
-function checkLakesideCampground() {
-  if (lakesideCampground.checked == true) {
-    prefLodging.push(lakesideCampground.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(lakesideCampground.value), 1);
-  }
-}
-
-function checkLeadfootCampground() {
-  if (leadfootCampground.checked == true) {
-    prefLodging.push(leadfootCampground.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(leadfootCampground.value), 1);
-  }
-}
-
-function checkTalusCampground() {
-  if (talusCampground.checked == true) {
-    prefLodging.push(talusCampground.value);
-  } else {
-    prefLodging.splice(prefLodging.indexOf(talusCampground.value), 1);
-  }
-}
+fireCabins.addEventListener('change', checkboxes.checkFireCabins);
+horseshoeCabins.addEventListener('change', checkboxes.checkHorseshoeCabins);
+spruceCabins.addEventListener('change', checkboxes.checkSpruceCabins);
+ursaMajorCabins.addEventListener('change', checkboxes.checkUrsaMajorCabins);
+bearMeadowCampground.addEventListener('change', checkboxes.checkBearMeadowCampground);
+lakesideCampground.addEventListener('change', checkboxes.checkLakesideCampground);
+leadfootCampground.addEventListener('change', checkboxes.checkLeadfootCampground);
+talusCampground.addEventListener('change', checkboxes.checkTalusCampground);
