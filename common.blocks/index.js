@@ -119,70 +119,45 @@ function emailVerify() {
   }
 }
 
-let checkboxes = {
-  checkFireCabins() {
-    if (fireCabins.checked == true) {
-      prefLodging.push(fireCabins.value);
+let objCkeckboxes = {
+  fireCabins,
+  horseshoeCabins,
+  spruceCabins,
+  ursaMajorCabins,
+  bearMeadowCampground,
+  lakesideCampground,
+  leadfootCampground,
+  talusCampground,
+  checkedBox(props) {
+    if (props.checked == true) {
+      prefLodging.push(props.value);
     } else {
-      prefLodging.splice(prefLodging.indexOf(fireCabins.value), 1);
-    }
-  },
-  checkHorseshoeCabins() {
-    if (horseshoeCabins.checked == true) {
-      prefLodging.push(horseshoeCabins.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(horseshoeCabins.value), 1);
-    }
-  },
-  checkSpruceCabins() {
-    if (spruceCabins.checked == true) {
-      prefLodging.push(spruceCabins.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(spruceCabins.value), 1);
-    }
-  },
-  checkUrsaMajorCabins() {
-    if (ursaMajorCabins.checked == true) {
-      prefLodging.push(ursaMajorCabins.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(ursaMajorCabins.value), 1);
-    }
-  },
-  checkBearMeadowCampground() {
-    if (bearMeadowCampground.checked == true) {
-      prefLodging.push(bearMeadowCampground.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(bearMeadowCampground.value), 1);
-    }
-  },
-  checkLakesideCampground() {
-    if (lakesideCampground.checked == true) {
-      prefLodging.push(lakesideCampground.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(lakesideCampground.value), 1);
-    }
-  },
-  checkLeadfootCampground() {
-    if (leadfootCampground.checked == true) {
-      prefLodging.push(leadfootCampground.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(leadfootCampground.value), 1);
-    }
-  },
-  checkTalusCampground() {
-    if (talusCampground.checked == true) {
-      prefLodging.push(talusCampground.value);
-    } else {
-      prefLodging.splice(prefLodging.indexOf(talusCampground.value), 1);
+      prefLodging.splice(prefLodging.indexOf(props.value), 1);
     }
   }
 };
 
-fireCabins.addEventListener('change', checkboxes.checkFireCabins);
-horseshoeCabins.addEventListener('change', checkboxes.checkHorseshoeCabins);
-spruceCabins.addEventListener('change', checkboxes.checkSpruceCabins);
-ursaMajorCabins.addEventListener('change', checkboxes.checkUrsaMajorCabins);
-bearMeadowCampground.addEventListener('change', checkboxes.checkBearMeadowCampground);
-lakesideCampground.addEventListener('change', checkboxes.checkLakesideCampground);
-leadfootCampground.addEventListener('change', checkboxes.checkLeadfootCampground);
-talusCampground.addEventListener('change', checkboxes.checkTalusCampground);
+fireCabins.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.fireCabins);
+});
+horseshoeCabins.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.horseshoeCabins);
+});
+spruceCabins.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.spruceCabins);
+});
+ursaMajorCabins.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.ursaMajorCabins);
+});
+bearMeadowCampground.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.bearMeadowCampground);
+});
+lakesideCampground.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.lakesideCampground);
+});
+leadfootCampground.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.leadfootCampground);
+});
+talusCampground.addEventListener('change', () => {
+  objCkeckboxes.checkedBox(objCkeckboxes.talusCampground);
+});
